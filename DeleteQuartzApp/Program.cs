@@ -82,6 +82,7 @@ namespace mpustelak.TopShelfAndQuartz
             var dt = DateTime.Now;
             var line_to_write = $"[{dt}] Minute job";
             Console.WriteLine(line_to_write);
+            log.Info(line_to_write);
         }
     }
 
@@ -93,7 +94,7 @@ namespace mpustelak.TopShelfAndQuartz
         {
             var strLine = $"[{DateTime.Now}] 15 seconds job!";
             Console.WriteLine(strLine);
-            log.Warn(strLine);
+            log.Info(strLine);
         }
     }
 }
